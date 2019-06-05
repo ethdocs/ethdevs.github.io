@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../../../assets/style.css?t=615badd5">
+    <link rel="stylesheet" href="../../../../style.css?t=cafc0a9d">
+    <script src="../../../../assets/script.js?t=42463e55"></script>
+    <script src="../../../../analytics.js?t=6b9996b6"></script>
+    <title>RaspberryPi as Gateway Setup - magic.</title>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body class="-menu-visible">
+    <div class="doc-layout">
+      <div class="toggle menu-toggle js-menu-toggle"></div>
+      <div class="menu toc-menu">
+        <li class="menu-item -level-0 -parent">
+          <ul class="submenu">
+            <li class="menu-item -level-1"><a class="link title  link-index" href="../../../../index.html">magic.</a>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Overview - What is Magic?</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-index-2" href="../../../../index.html">Intro</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">User Quick Start</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-magic-cliquick-startinstalling-cli" href="../../../../magic-cli/quick-start/installing-cli.html">Installing CLI</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-magic-cliquick-startgenerating-account" href="../../../../magic-cli/quick-start/generating-account.html">Generating Test Account</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Provider Quick Start</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-magic-agentprovidergatewayquick-starthardware-prereqs" href="../../../../magic-agent/provider/gateway/quick-start/hardware-prereqs.html">Hardware Pre-requisites</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-magic-agentprovidergatewayquick-startgateway-server-setup" href="../../../../magic-agent/provider/gateway/quick-start/gateway-server-setup.html">Gateway Server Setup</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-magic-agentprovidergatewayquick-startrouter-setup" href="../../../../magic-agent/provider/gateway/quick-start/router-setup.html">Router Setup</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-magic-agentprovidergatewayquick-startclient-connection" href="../../../../magic-agent/provider/gateway/quick-start/client-connection.html">Client Connection</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Guides</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-magic-agentprovidergatewayguidesconfiguring-your-gateway" href="../../../../magic-agent/provider/gateway/guides/configuring-your-gateway.html">Advanced Gateway Configuration</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title -active link-magic-agentprovidergatewayguidesraspberry-pi-setup" href="../../../../magic-agent/provider/gateway/guides/raspberry-pi-setup.html">RaspberryPi as Gateway Setup</a>
+                  <ul class="headings heading-list">
+                    <li class="heading-item -depth-2"><a class="hlink link-raspberry-pi-pre-requisites" href="#raspberry-pi-pre-requisites">Raspberry Pi Pre-requisites</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-install-magic-pre-requisites" href="#install-magic-pre-requisites">Install Magic Pre-requisites</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-install-magic" href="#install-magic">Install Magic</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-run-magic-on-startup" href="#run-magic-on-startup">Run Magic on startup</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Architecture</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><span class="title">Primary Components</span>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-magic-protocolmagic-coin" href="../../../../magic-protocol/magic-coin.html">The Token</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-magic-protocolsmart-contracts" href="../../../../magic-protocol/smart-contracts.html">Smart Contracts</a>
+                </li>
+                <li class="menu-item -level-2"><span class="title">Whitepaper</span>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Reference</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-magic-protocolcontract-addresses" href="../../../../magic-protocol/contract-addresses.html">Contract Addresses</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-magic-agentprovidergatewayreferenceadvanced-config" href="../../../../magic-agent/provider/gateway/reference/advanced-config.html">Advanced Gateway Configuration</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1"><span class="title">FAQ</span>
+            </li>
+            <li class="menu-item -level-1"><span class="title">Changelog</span>
+            </li>
+          </ul>
+        </li>
+      </div>
+      <div class="body page-magic-agentprovidergatewayguidesraspberry-pi-setup">
+        <div class="header-nav">
+          <div class="right">
+          </div>
+        </div>
+        <div class="markdown-body"><h1 id="using-a-raspberry-pi-as-a-gateway">Using a Raspberry Pi as a Gateway</h1>
+<p>For this tutorial, we&#x2019;ve dedicated a Raspberry Pi 3 Model B to serve as a gateway.</p>
+<p>If you already have a Pi setup that is connected to an existing internet connection, simply follow the instructions below to install Magic Agent on the Pi.</p>
+<h2 id="raspberry-pi-pre-requisites">Raspberry Pi Pre-requisites</h2>
+<ul>
+<li>Running Raspbian (Lite is sufficient)</li>
+<li>Connected to the internet</li>
+</ul>
+<p>Note: The Pi should be connected to the internet on the same network as you are planning to install Magic and needs to maintain internet connectivity in order to serve as a gateway for Magic Clients to connect through.</p>
+<h2 id="install-magic-pre-requisites">Install Magic Pre-requisites</h2>
+<h4 id="update">Update</h4>
+<p>Some packages may fail to resolve if you don&apos;t first update Raspbian</p>
+<p><code>sudo apt update</code></p>
+<h4 id="install-git">Install git</h4>
+<p><code>sudo apt install git</code></p>
+<h4 id="install-pip">Install pip</h4>
+<p><code>sudo apt install python-pip</code></p>
+<h4 id="install-docker">Install Docker</h4>
+<p><code>curl -fsSL get.docker.com -o get-docker.sh &amp;&amp; sh get-docker.sh</code></p>
+<h4 id="add-user-to-docker-group">Add user to Docker group</h4>
+<p>Running the docker install script will tell you to add the user to the docker group by running</p>
+<p><code>sudo usermod -aG docker pi</code></p>
+<p>Not doing this will make attaching to the Docker daemon fail later on in the setup process</p>
+<h4 id="install-docker-compose">Install Docker Compose</h4>
+<p>As of 5/14/2019 installing docker-compose through pip will fail giving the following error: <code>TypeError: unsupported operand types for -=: &apos;Retry&apos; and &apos;int&apos;</code></p>
+<p>Currently you have to first install an old version using <code>apt</code></p>
+<p><code>sudo apt install docker-compose</code></p>
+<p>and then upgrade to a newer version, but not the newest version, since that also fails to install due to <a href="https://github.com/docker/compose/issues/6617">https://github.com/docker/compose/issues/6617</a></p>
+<p><code>sudo pip install docker-compose==1.23.2</code></p>
+<h4 id="reboot">Reboot</h4>
+<p>You won&apos;t be able to connect to the Docker daemon until you restart</p>
+<p><code>sudo reboot</code></p>
+<h2 id="install-magic">Install Magic</h2>
+<p>Follow the same steps as the Quick Start:
+<a href="https://magic-network.github.io/magic-agent/provider/gateway/quick-start/gateway-server-setup.html">https://magic-network.github.io/magic-agent/provider/gateway/quick-start/gateway-server-setup.html</a></p>
+<p>Depending on permissions on the Pi, you may need to modify the steps above with sudo.</p>
+<h2 id="run-magic-on-startup">Run Magic on startup</h2>
+<p>There are various ways of running a program on startup so if there is a method you prefer please feel free to use that method instead.</p>
+<p>Our default recommended method is to edit the <code>rc.local</code> file since we only want to have the program run once.</p>
+<p>In the terminal type in:</p>
+<p><code>sudo nano /etc/rc.local</code></p>
+<p>Now add the line:</p>
+<p><code>docker-compose -f &lt;location of magic agent&gt;/docker-compose.yml up -d</code></p>
+<p>Assuming you installed the magic agent to the default location the path will be:</p>
+<p><code>/home/pi/magic-agent/docker-compose.yml</code></p>
+<p>To save your changes hit ctrl-x and it will prompt you to save your changes. Enter y/yes and you should be good to go. If you want, try rebooting the pi and once it has finished booting run <code>docker ps</code> in the terminal to see if the container is running. It should appear in the list of running containers.</p>
+
+        </div>
+        <div class="footer-nav">
+          <div class="left"><a href="../../../../magic-agent/provider/gateway/guides/configuring-your-gateway.html"><span class="title">Advanced Gateway Configuration</span></a></div>
+          <div class="right"><a href="../../../../magic-protocol/magic-coin.html"><span class="label">Next: </span><span class="title">The Token</span></a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

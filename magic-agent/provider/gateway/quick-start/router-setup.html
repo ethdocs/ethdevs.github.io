@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../../../assets/style.css?t=615badd5">
+    <link rel="stylesheet" href="../../../../style.css?t=cafc0a9d">
+    <script src="../../../../assets/script.js?t=42463e55"></script>
+    <script src="../../../../analytics.js?t=6b9996b6"></script>
+    <title>Router Setup - magic.</title>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body class="-menu-visible">
+    <div class="doc-layout">
+      <div class="toggle menu-toggle js-menu-toggle"></div>
+      <div class="menu toc-menu">
+        <li class="menu-item -level-0 -parent">
+          <ul class="submenu">
+            <li class="menu-item -level-1"><a class="link title  link-index" href="../../../../index.html">magic.</a>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Overview - What is Magic?</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-index-2" href="../../../../index.html">Intro</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">User Quick Start</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-magic-cliquick-startinstalling-cli" href="../../../../magic-cli/quick-start/installing-cli.html">Installing CLI</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-magic-cliquick-startgenerating-account" href="../../../../magic-cli/quick-start/generating-account.html">Generating Test Account</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Provider Quick Start</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-magic-agentprovidergatewayquick-starthardware-prereqs" href="../../../../magic-agent/provider/gateway/quick-start/hardware-prereqs.html">Hardware Pre-requisites</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-magic-agentprovidergatewayquick-startgateway-server-setup" href="../../../../magic-agent/provider/gateway/quick-start/gateway-server-setup.html">Gateway Server Setup</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title -active link-magic-agentprovidergatewayquick-startrouter-setup" href="../../../../magic-agent/provider/gateway/quick-start/router-setup.html">Router Setup</a>
+                  <ul class="headings heading-list">
+                    <li class="heading-item -depth-2"><a class="hlink link-microtik" href="#microtik">MicroTik</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-openwrt" href="#openwrt">OpenWRT</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-magic-agentprovidergatewayquick-startclient-connection" href="../../../../magic-agent/provider/gateway/quick-start/client-connection.html">Client Connection</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Guides</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-magic-agentprovidergatewayguidesconfiguring-your-gateway" href="../../../../magic-agent/provider/gateway/guides/configuring-your-gateway.html">Advanced Gateway Configuration</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-magic-agentprovidergatewayguidesraspberry-pi-setup" href="../../../../magic-agent/provider/gateway/guides/raspberry-pi-setup.html">RaspberryPi as Gateway Setup</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Architecture</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><span class="title">Primary Components</span>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-magic-protocolmagic-coin" href="../../../../magic-protocol/magic-coin.html">The Token</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-magic-protocolsmart-contracts" href="../../../../magic-protocol/smart-contracts.html">Smart Contracts</a>
+                </li>
+                <li class="menu-item -level-2"><span class="title">Whitepaper</span>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Reference</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-magic-protocolcontract-addresses" href="../../../../magic-protocol/contract-addresses.html">Contract Addresses</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-magic-agentprovidergatewayreferenceadvanced-config" href="../../../../magic-agent/provider/gateway/reference/advanced-config.html">Advanced Gateway Configuration</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1"><span class="title">FAQ</span>
+            </li>
+            <li class="menu-item -level-1"><span class="title">Changelog</span>
+            </li>
+          </ul>
+        </li>
+      </div>
+      <div class="body page-magic-agentprovidergatewayquick-startrouter-setup">
+        <div class="header-nav">
+          <div class="right">
+          </div>
+        </div>
+        <div class="markdown-body"><h1 id="configure-routerap:">Configure Router/AP:</h1>
+<p>At a high level, this is what you&apos;ll need to configure:</p>
+<ol>
+<li>
+<p>Enable a virtual wireless access point on your router using WPA2-Enterprise, enabling and configuring RADIUS and setting your gateway device&apos;s IP as the gateway server.</p>
+</li>
+<li>
+<p>Set hostname of gateway:</p>
+<ul>
+<li>Via a DNS entry on your router. (recommended)</li>
+<li>Via manually changing hostname on your gateway device.</li>
+</ul>
+</li>
+<li>
+<p>Verify gateway server is configured with the IP of the router.</p>
+</li>
+</ol>
+<p>There&apos;s an enormous amount of variation in router firmware. Here are guides for a few of the more common varieties.</p>
+<h2 id="microtik">MicroTik</h2>
+<ol>
+<li>
+<p>After initial setup of a MicroTik router, navigate again to it&apos;s portal at <code>http://192.168.88.1/webfig</code>.</p>
+</li>
+<li>
+<p>In <code>Wireless &gt; Security Profiles</code> section, Create a new security profile.</p>
+<ul>
+<li>Set to <strong>dynamic keys</strong></li>
+<li>Authentication Type: <strong>WPA2 EAP</strong></li>
+<li>Unicast cyphers and group cyphers: <strong>aes ccm</strong></li>
+<li>Supplicant identity: <strong>magic</strong></li>
+<li>EAP Methods: <strong>passthrough</strong></li>
+</ul>
+<p>NOTE: The supplicant identity must be named magic.</p>
+</li>
+<li>
+<p>In the <code>Wireless &gt; Interfaces</code> section, Create a new virtual access point.</p>
+<ul>
+<li>Mode: <strong>ap bridge</strong></li>
+<li>SSID: <strong>magic</strong></li>
+<li>Security Profile: <strong>magic</strong> (supplicant identity from step 2)</li>
+</ul>
+<p>NOTE: Uncheck <strong>Default Forwarding</strong> (disables client-to-client direct communication)</p>
+</li>
+<li>
+<p>In the <code>Radius</code> section, Click <code>Add New</code> and create with the following config:</p>
+<ul>
+<li>Enable: <strong>checked</strong></li>
+<li>Service: <strong>wireless</strong></li>
+<li>Address: <strong>&lt;your magic gateway ip&gt;</strong> (Please contact us to request an closed beta default gateway server in the cloud)</li>
+<li>Secret: <strong>magicsecret</strong></li>
+</ul>
+<p>Save configuration. Find &amp; click the &quot;Incoming&quot; button (still in the <code>Radius</code> section) to set Port number and accept requests.</p>
+<ul>
+<li>Accept: <strong>checked</strong></li>
+<li>Port: <strong>3799</strong></li>
+</ul>
+<p>NOTE: To receive the ip of your pi gateway, run the terminal command <code>ifconfig</code>.</p>
+</li>
+</ol>
+<h2 id="openwrt">OpenWRT</h2>
+<p>Coming soon! Already tried this for yourself? Help us improve our documentation.</p>
+<p>View our <a href="https://github.com/magic-network/magic-agent/blob/master/CONTRIBUTING.md">contributing guide</a>
+for more details.</p>
+
+        </div>
+        <div class="footer-nav">
+          <div class="left"><a href="../../../../magic-agent/provider/gateway/quick-start/gateway-server-setup.html"><span class="title">Gateway Server Setup</span></a></div>
+          <div class="right"><a href="../../../../magic-agent/provider/gateway/quick-start/client-connection.html"><span class="label">Next: </span><span class="title">Client Connection</span></a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

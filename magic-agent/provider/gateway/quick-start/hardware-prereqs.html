@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../../../assets/style.css?t=615badd5">
+    <link rel="stylesheet" href="../../../../style.css?t=cafc0a9d">
+    <script src="../../../../assets/script.js?t=42463e55"></script>
+    <script src="../../../../analytics.js?t=6b9996b6"></script>
+    <title>Hardware Pre-requisites - magic.</title>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body class="-menu-visible">
+    <div class="doc-layout">
+      <div class="toggle menu-toggle js-menu-toggle"></div>
+      <div class="menu toc-menu">
+        <li class="menu-item -level-0 -parent">
+          <ul class="submenu">
+            <li class="menu-item -level-1"><a class="link title  link-index" href="../../../../index.html">magic.</a>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Overview - What is Magic?</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-index-2" href="../../../../index.html">Intro</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">User Quick Start</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-magic-cliquick-startinstalling-cli" href="../../../../magic-cli/quick-start/installing-cli.html">Installing CLI</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-magic-cliquick-startgenerating-account" href="../../../../magic-cli/quick-start/generating-account.html">Generating Test Account</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Provider Quick Start</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title -active link-magic-agentprovidergatewayquick-starthardware-prereqs" href="../../../../magic-agent/provider/gateway/quick-start/hardware-prereqs.html">Hardware Pre-requisites</a>
+                  <ul class="headings heading-list">
+                    <li class="heading-item -depth-2"><a class="hlink link-wifi-router-(access-point)" href="#wifi-router-(access-point)">Wifi Router (Access Point)</a>
+                    </li>
+                    <li class="heading-item -depth-2"><a class="hlink link-gateway-server-device" href="#gateway-server-device">Gateway Server Device</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-magic-agentprovidergatewayquick-startgateway-server-setup" href="../../../../magic-agent/provider/gateway/quick-start/gateway-server-setup.html">Gateway Server Setup</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-magic-agentprovidergatewayquick-startrouter-setup" href="../../../../magic-agent/provider/gateway/quick-start/router-setup.html">Router Setup</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-magic-agentprovidergatewayquick-startclient-connection" href="../../../../magic-agent/provider/gateway/quick-start/client-connection.html">Client Connection</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Guides</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-magic-agentprovidergatewayguidesconfiguring-your-gateway" href="../../../../magic-agent/provider/gateway/guides/configuring-your-gateway.html">Advanced Gateway Configuration</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-magic-agentprovidergatewayguidesraspberry-pi-setup" href="../../../../magic-agent/provider/gateway/guides/raspberry-pi-setup.html">RaspberryPi as Gateway Setup</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Architecture</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><span class="title">Primary Components</span>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-magic-protocolmagic-coin" href="../../../../magic-protocol/magic-coin.html">The Token</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-magic-protocolsmart-contracts" href="../../../../magic-protocol/smart-contracts.html">Smart Contracts</a>
+                </li>
+                <li class="menu-item -level-2"><span class="title">Whitepaper</span>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1 -parent"><span class="title">Reference</span>
+              <ul class="submenu">
+                <li class="menu-item -level-2"><a class="link title  link-magic-protocolcontract-addresses" href="../../../../magic-protocol/contract-addresses.html">Contract Addresses</a>
+                </li>
+                <li class="menu-item -level-2"><a class="link title  link-magic-agentprovidergatewayreferenceadvanced-config" href="../../../../magic-agent/provider/gateway/reference/advanced-config.html">Advanced Gateway Configuration</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item -level-1"><span class="title">FAQ</span>
+            </li>
+            <li class="menu-item -level-1"><span class="title">Changelog</span>
+            </li>
+          </ul>
+        </li>
+      </div>
+      <div class="body page-magic-agentprovidergatewayquick-starthardware-prereqs">
+        <div class="header-nav">
+          <div class="right">
+          </div>
+        </div>
+        <div class="markdown-body"><h1 id="hardware-prerequisites">Hardware Prerequisites</h1>
+<p>To be a magic wifi provider, you need the following devices:</p>
+<ol>
+<li>Wifi Router (Access Point)</li>
+<li>Gateway server device</li>
+</ol>
+<h2 id="wifi-router-(access-point)">Wifi Router (Access Point)</h2>
+<p>Most Wifi-enabled routers can be re-purposed as Magic Access Points, as long as they have the following features:</p>
+<ul>
+<li><strong>WPA2-Enterprise</strong>, which enables RADIUS, the open-source AAA(Authentication, Authorization, &amp; Accounting) server which magic utilizes.</li>
+<li><strong>RFC-5176 Support</strong> - Change-of-Authorization &amp; Disconnect messages.  Without this feature, Magic doesn&apos;t have the ability to disconnect people from your network.</li>
+</ul>
+<p>It may be difficult to know if your router supports the above features. A router diagnostics
+tool will be provided soon to run against your router, but in the meantime, we recommend purchasing one of these inexpensive &amp; fully-featured routers.</p>
+<p>Recommended Routers:</p>
+<ul>
+<li><a href="https://mikrotik.com/products" target="_blank">MicroTik</a></li>
+</ul>
+<p><em>In some cases, your router may have the features available, but your firmware doesn&apos;t support them.  In this case, you may use
+the open source router firmware called <a href="https://openwrt.org/" target="_blank">OpenWrt</a>.</em></p>
+<h2 id="gateway-server-device">Gateway Server Device</h2>
+<p>This is a separate device, such as a Raspberry Pi , that runs the magic-agent in the &quot;gateway&quot; role.  All authentication
+requests to use your Magic Access Point will be sent through this device, and it will be where you configure the availability and
+pricing of your Access Point.</p>
+<p><a href="../guides/raspberry-pi-setup.html">Raspberry Pi device setup guide</a></p>
+<p>In general, magic-agent can run on abt x86 or ARM resource, and virtually any OS that follows POSIX compliant standards.</p>
+<p><em>Magic Agent runs using <a href="https://docs.docker.com/docker-for-windows/install/">Docker</a> If you&apos;re using a Windows device, you&apos;ll need Windows 10 Pro, Enterprise, or Education. Docker <a href="https://github.com/magic-network/magic-agent/issues/3">does not currently support Windows 10 Home</a>.</em></p>
+<p>While you can install and run the agent on a laptop for testing purposes, your gateway will not be available if you power your laptop down. As such, we recommend installing on a device that can serve as a persistent connected gateway which Magic clients can access continously.</p>
+<p><em>We will soon support a cloud-based gateway server to reduce the need to run a local device for this role.</em></p>
+
+        </div>
+        <div class="footer-nav">
+          <div class="left"><a href="../../../../magic-cli/quick-start/generating-account.html"><span class="title">Generating Test Account</span></a></div>
+          <div class="right"><a href="../../../../magic-agent/provider/gateway/quick-start/gateway-server-setup.html"><span class="label">Next: </span><span class="title">Gateway Server Setup</span></a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
