@@ -62,7 +62,8 @@ body {
 
 /* logo */
 .toc-menu .-level-1:first-child > .title {
-    background-image: url('https://s3.us-east-2.amazonaws.com/magic-statics/docs/magic-docs-logo-black.png');
+    /* background-image: url('https://s3.us-east-2.amazonaws.com/magic-statics/docs/magic-docs-logo-black.png'); */
+    
     background-position: 24px 0;
     background-repeat: no-repeat;
     background-size: 150px;
