@@ -2,13 +2,13 @@
   "toc": {
     "sections": [
       {
-        "title": "Home page",
+        "title": "Homepage",
         "sections": [
           {
-            "title": "Home page",
-            "source": "docs/homepage.md",
-            "url": "homepage.html",
-            "slug": "homepage",
+            "title": "Homepage",
+            "source": "docs/index.md",
+            "url": "index.html",
+            "slug": "index",
             "headings": [
               {
                 "title": "Initial guides (all in progress still)",
@@ -155,11 +155,11 @@
     ]
   },
   "index": {
-    "homepage.html": {
-      "source": "docs/homepage.md",
-      "title": "Home page",
-      "pageTitle": "Home page",
-      "slug": "homepage",
+    "index.html": {
+      "source": "docs/index.md",
+      "title": "Homepage",
+      "pageTitle": "Homepage",
+      "slug": "index",
       "headings": [
         {
           "title": "Initial guides (all in progress still)",
@@ -175,7 +175,7 @@
     },
     "guides/hypothesis.html": {
       "source": "docs/guides/hypothesis.md",
-      "title": "Hypotheis - Home page",
+      "title": "Hypotheis - Homepage",
       "pageTitle": "Hypotheis",
       "slug": "guideshypothesis",
       "headings": [
@@ -193,7 +193,7 @@
     },
     "guides/blockchain/guide.html": {
       "source": "docs/guides/blockchain/guide.md",
-      "title": "Programming a blockchain - Home page",
+      "title": "Programming a blockchain - Homepage",
       "pageTitle": "Programming a blockchain",
       "slug": "guidesblockchainguide",
       "headings": [
@@ -211,19 +211,19 @@
     },
     "guides/ethereum/contracts.html": {
       "source": "docs/guides/ethereum/contracts.md",
-      "title": "Smart contracts - Home page",
+      "title": "Smart contracts - Homepage",
       "pageTitle": "Smart contracts",
       "slug": "guidesethereumcontracts"
     },
     "guides/Dapp development/readme.html": {
       "source": "docs/guides/Dapp development/readme.md",
-      "title": "Dapp building - Home page",
+      "title": "Dapp building - Homepage",
       "pageTitle": "Dapp building",
       "slug": "guidesdapp-developmentreadme"
     },
     "about/contribution.html": {
       "source": "docs/about/contribution.md",
-      "title": "Contribution - Home page",
+      "title": "Contribution - Homepage",
       "pageTitle": "Contribution",
       "slug": "aboutcontribution",
       "headings": [
@@ -236,7 +236,7 @@
     },
     "about/codeofconduct.html": {
       "source": "docs/about/codeofconduct.md",
-      "title": "Code of conduct - Home page",
+      "title": "Code of conduct - Homepage",
       "pageTitle": "Code of conduct",
       "slug": "aboutcodeofconduct",
       "headings": [
@@ -276,7 +276,7 @@
     }
   },
   "sources": {
-    "docs/homepage.md": "homepage.html",
+    "docs/index.md": "index.html",
     "docs/guides/hypothesis.md": "guides/hypothesis.html",
     "docs/guides/blockchain/guide.md": "guides/blockchain/guide.html",
     "docs/guides/ethereum/contracts.md": "guides/ethereum/contracts.html",
