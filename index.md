@@ -14,8 +14,6 @@ If a picture can be worth 1000 words, then showing you how this technology works
 [Dapp development](add link) – Connect your web application to the blockchain 
 
 
-
-
 ### About
 This project is the result of an open collaboration initiative by the [Zurich Blockchain RnD group](https://zbrd.org/) in switzerland and the [EthDevs.io](https://www.ethdevs.io/) team. We try to build free (also as in free beer, yes) blockchain communities to benefit all. Your contributions are very welcome.
 
